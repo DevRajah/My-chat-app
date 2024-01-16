@@ -28,7 +28,7 @@ do {
   }
 } while (userName.length < 1 || userName == null);
 document.querySelector("h1").innerHTML=`Hello ${userName}! Welcome to my chat application`
-const socket=io("http://localhost:4040")
+const socket=io("https://chatme-zb91.onrender.com")
 
 // Display message history
 socket.on('message history', function (history) {
